@@ -1,0 +1,71 @@
+
+
+<?php
+
+	$languageID=$_POST["language"];
+        error_reporting(0);
+
+
+	if($_FILES["file"]["name"]!="")
+	{
+		include "compilers/make.php";
+	}
+	else
+	{
+		switch($languageID)
+			{
+				case "c":
+				{
+					include("compilers/c.php");
+					break;
+				}
+				case "cpp":
+				{
+					include("compilers/cpp.php");
+					break;
+				}
+
+				case "cpp11":
+				{
+					include("compilers/cpp11.php");
+					break;
+				}
+				case "java":
+				{
+					include("compilers/java.php");
+					break;
+				}
+				case "python2.7":
+				{
+					include("compilers/python27.php");
+					break;
+				}
+				case "python3.2":
+				{
+					include("compilers/python32.php");
+					break;
+				}
+				case "Ruby":
+				{
+					include("compilers/ruby.php");
+					break;
+				}
+				case "Perl":
+				{
+					include("compilers/perl.php");
+					break;
+				}
+				case "Rust":
+				{
+					include("compilers/rust.php");
+					break;
+				}
+				case "Go":
+				{
+					include("compilers/go.php");
+					break;
+				}
+
+			}
+	}
+?>
