@@ -4,36 +4,8 @@ This is an Online Compiler For Windows Server
 # SET UP
 
 ```
-Install CodeBlocks IDE
-```
-
-```
-Go To  Codeblocks Installed Folder bin Location And Copy The Path. Mine Is
-
-C:\Program Files (x86)\CodeBlocks\MinGW\bin
-
-```
-
-```
-Then Set Your Compiler Path On Environment Variable From Windows System Property Otherwise It will not work 
-
-```
-
-```
-At Last Replace Path in putenv() function by your path
-
-```
-
-For Java Install Java
-```
-Go To Java Installed Folder bin Location And Copy The Path. Mine Is
-
-C:\Program Files (x86)\Java\jdk1.8.0_112\bin
-
-```
-
-
-```
+Download all the compilers required for the languages you want and run it on your system as the server.
+You can add any language on it that is supported by your host operating system
 At Last Replace Path in putenv() function by your path
 ```
 
